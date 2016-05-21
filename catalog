@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Спецтех - Главная</title>
+</head>
+<body>
+	
+	<header class="page-header">
+	  <div class="container">
+	  	<a href="#" class="logo">
+	  	 <img src="http://placehold.it/50" alt="Лого" class="logo-img">
+	  	  <span class="logo-text">
+	  	    <b>Спецтех</b>24
+	  	  </span>
+	    </a>
+	    <nav>
+	    	<main-nav>
+	    		<ul>
+	    			<li><a href="#"></a></li>
+	    			<li><a href="#"></a></li>
+	    			<li><a href="#"></a></li>
+	    			<li><a href="#"></a></li>
+	    			<li class="btn btn-order"><a href="#"></a></li>
+	    		</ul>
+	    	</main-nav>
+	    </nav>
+	  </div>
+	</header>
+
+	<main>
+
+	<div class="consalt">
+		<div class="consalt-text">
+			<h2></h2>
+			<p></p>
+	    </div>
+	    <div class="consalt-order">
+			<a href="#" class="btn btn-consalt-order"></a>
+			<p></p>
+		</div>
+	</div>
+
+	<div class="catalog">
+        <div class="catalog-menu">
+           <h2></h2>
+      	      <ul>
+      		     <li><a href="#"></a></li>
+      		       <ul class="breadcrumbs">
+      		       	<li></li>
+      		       </ul>
+      		     <li><a href="#"></a></li>
+      		     <li><a href="#"></a></li>
+      		     <li><a href="#"></a></li>
+      		     <li><a href="#"></a></li>
+      		     <li><a href="#"></a></li>
+      		     <li><a href="#"></a></li>
+      	      </ul>
+      	      <a href="#" class="btn btn-download"></a>
+      	</div>
+
+      	<div class="catalog-items">
+      		<article>
+      			<h3></h3>
+      			<img src="#" alt="car">
+      			<p></p>
+      			<a href="#" class="btn btn-rent"x></a>
+      			<a href="#" class="btn btn-read"></a>
+      		</article>
+
+      		<article>
+      			<h3></h3>
+      			<img src="#" alt="car">
+      			<p></p>
+      			<a href="#" class="btn btn-rent"></a>
+      			<a href="#" class="btn btn-read"></a>
+      		</article>
+
+      		<article>
+      			<h3></h3>
+      			<img src="#" alt="car">
+      			<p></p>
+      			<a href="#" class="btn btn-rent"></a>
+      			<a href="#" class="btn btn-read"></a>
+      		</article>
+
+      		<article>
+      			<h3></h3>
+      			<img src="#" alt="car">
+      			<p></p>
+      			<a href="#" class="btn btn-rent"></a>
+      			<a href="#" class="btn btn-read"></a>
+      		</article>
+      	</div>
+
+      	<div class="special-offers">
+      	    <h2></h2>
+      		<article>
+      			<h3></h3>
+      			<img src="" alt="car">
+      			<p></p>
+      			<a href="#"></a>
+      			<a href="#"></a>
+      		</article>
+      		<article>
+      			<h3></h3>
+      			<img src="" alt="car">
+      			<p></p>
+      			<a href="#"></a>
+      			<a href="#"></a>
+      		</article>
+      		<article>
+      			<h3></h3>
+      			<img src="" alt="car">
+      			<p></p>
+      			<a href="#"></a>
+      			<a href="#"></a>
+      		</article>
+      	</div>
+
+      	</main>
+
+    <footer>
+	<a href="#" class="logo">
+	  	 <img src="" alt="Лого" class="logo-img">
+	  	  <span class="logo-text">
+	  	    <b>Спецтех</b>24
+	  	  </span>
+	    </a>
+	    <nav>
+	          <ul>
+	       		  <li><a href="#"></a></li>
+	    		  <li><a href="#"></a></li>
+	   			  <li><a href="#"></a></li>
+	   			  <li><a href="#"></a></li>
+	   			  <li><a href="#"></a></li>
+	          </ul>
+	    </nav>
+    </footer>
+
+</body>
+</html>
