@@ -1,0 +1,130 @@
+.page-header {
+   background-color: #ffce34;
+}
+.logo {
+	float:left;
+}
+.page-header .logo-text {
+	color: #000;
+}
+
+.header-nav li{
+   display: inline-block;
+   text-decoration: none;
+   list-style: none;
+}
+.btn {
+   padding: 15px;
+}
+.btn-order {
+    background-color: #ffe083;
+}
+.btn-order a {
+	text-decoration: none;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    border: 3px solid red;
+}
+.portfolio ul {
+	list-style: none;
+}
+.portfolio li {
+	display: inline-block;
+}
+.btn-detail {
+	display: block;
+	width: 150px;
+    background-color: #ffce34;
+    color: #202e3b;
+	text-decoration: none;
+}
+.promo {
+	color: #fff;
+	background: green;
+}
+.consult {
+	background-color: #202e3b;
+}
+.consult h2 {
+	color: #ffce34;
+}
+.consult input[type="text"] {
+	border: 1px solid #ffce34;
+}
+.btn-consult-order {
+	display: block;
+	width: 200px;
+	background-color: #ffce34;
+	color: #202e3b;
+	text-decoration: none;
+}
+
+.btn-catalog {
+	display: block;
+	width: 200px;
+	border: 2px solid #ffce34;
+	text-decoration: none;
+	color: white;
+}
+.advert-item {
+	display: inline-block;
+	width: 80px;
+	margin: 20px 30px;
+	border: 2px solid red;
+}
+.catalog {
+	background-color: #f3f3f3;
+}
+.catalog-menu ul {
+	list-style: none;
+}
+.benefit {
+	background-color: #202e3b;
+	color: white;
+}
+.benefit-numbers ul{
+	list-style: none;
+}
+.ben-num, cite {
+	color: #ffce34;
+}
+
+.footer {
+	background-color: #202e3b;
+}
+.main-footer {
+	background-color: #202e3b;
+}
+.footer-nav li{
+	display: inline-block;
+	text-decoration:none;
+	list-style: none;
+}
+.footer-nav a{
+	color: white;
+}
+}
+.footer-nav a >.order {
+	color: #ffce34;
+}
+.footer.logo-text {
+	color: #ffce34;
+	text-decoration: none;
+}
+.btn-download, .btn-read {
+	background-color: #202e3b;
+	color: white;
+}
+.btn-rent {
+	background-color: #ffce34;
+	color: white;
+}
+.map-form {
+	background-color: #f3f3f3;
+}
+.cite-contacts-com {
+	color: #202e3b;
+}
