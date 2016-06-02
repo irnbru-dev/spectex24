@@ -1,164 +1,322 @@
-* {
-	padding: 0;
-	margin: 0;
+*{
+  padding: 0;
+  margin: 0;
 }
-img {
-	max-width: 100%;
+
+img{
+  max-width: 100%;
 }
-.container {
-	width: 930px;
-	margin: 0 auto;
-	overflow: hidden;
+
+.container{
+  width: 930px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.page-header {
-   background-color: #ffce34;
+
+
+/* PAGE-HEADER */
+.page-header{
+  padding: 15px 0;
+  background-color: orange;
 }
-.logo {
-	float:left;
+
+.logo{
+  float: left;
+  width: 20%;
+  margin-right: 5%;
 }
+
 .logo-img,
-.logo-text {
-	vertical-align: middle;
+.logo-text{
+  vertical-align: middle;
 }
-.page-header .logo-text {
-	color: #000;
+
+.header-nav{
+  float: right;
+  width: 75%;
+  text-align: right;
 }
 
 .header-nav li{
-   float: right;
-   text-decoration: none;
-   list-style: none;
+  display: inline-block;
+}
+
+.header-nav a{
+  display: inline-block;
+  padding: 10px;
 }
 .btn {
-   padding: 15px;
+   padding: 5px;
 }
 .btn-order {
-	float: right;
+	margin-left: 30px;
+    display: inline-block;
     background-color: #ffe083;
+    color: black;
 }
 .btn-order a {
-	text-decoration: none;
+  text-decoration: none;
 }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-    border: 3px solid red;
-}
-.portfolio ul {
-	list-style: none;
-}
-.portfolio li {
-	display: inline-block;
-}
-.btn-detail {
-	display: block;
-	width: 150px;
-    background-color: #ffce34;
-    color: #202e3b;
-	text-decoration: none;
-}
+
+/* PROMO */
+
 .promo {
-	color: #fff;
-	background: green;
+	background-image: url(http://placehold.it/1000x1000);
+	text-align: center;
+	
 }
+.promo-slogan {
+	color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+.promo-txt {
+	color: white;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.btn-catalog {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  border: 2px solid #ffce34;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* CONSULT */
+
 .consult {
-	background-color: #202e3b;
+	padding-bottom: 20px;
 }
-.consult h2 {
-	color: #ffce34;
+.consult-title {
+  margin: 20px 20px;
 }
 .consult input[type="text"] {
-	border: 1px solid #ffce34;
+  display: inline-block;
+  margin-right: 2%;
+  padding: 10px;
+  border: 2px solid yellow;
+  width: 20%;
+  
 }
 .btn-consult-order {
-	display: block;
-	width: 200px;
-	background-color: #ffce34;
-	color: #202e3b;
-	text-decoration: none;
+  display: inline-block;
+  width: 20%;
+  margin-right: 0;
+  background-color: #ffce34;
+  color: #202e3b;
+  text-decoration: none;
 }
 
-.btn-catalog {
-	display: block;
-	width: 200px;
-	border: 2px solid #ffce34;
-	text-decoration: none;
-	color: white;
+
+/* ADVERT */
+.advert{
+  background-color: gray;
+  padding: 15px 0;
+  overflow: hidden;
 }
-.advert {
-	padding: 15px 0;
+
+.advert-item{
+  float: left;
+  width: 25%;
+  padding-right: 25px;
+  padding-left: 75px;
+  box-sizing: border-box;
+
+  background-image: url(http://placehold.it/50x50);
+  background-position: 5px 10px;
+  background-repeat: no-repeat;
 }
-.advert-item {
+
+.advert-item:last-child{
+  padding-right: 0;
+}
+
+/* CATALOG */
+.catalog {
+	padding-bottom: 20px;
+}
+.catalog-menu {
 	float: left;
 	width: 25%;
-	padding-right: 25px;
-	padding-left: 75px;
-	border: 2px solid red;
-	box-sizing: border-box;
-
-	background-image: url(http%//placehold.it/50);
-	background-repeat: no-repeat;
-	background-position: 5px center ;
+	margin-right: 5%;
 }
-.advert-item:last-child {
-	padding-right: 0;
+.catalog-offers {
+	float: left;
+	width: 70%;
+}
+
+/* ABOUT */
+.about{
+  padding: 15px 0;
+}
+
+.numbers{
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+.numbers-list li {
+  list-style: none;
+}
+.numbers-number {
+	font-size: 20px;
+	color: yellow;
+}
+.reviews{
+  width: 65%;
+  float: left;
+}
+
+.reviews-item{
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.reviews-img{
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.reviews-quote{
+  float: left;
+  width: 65%;
+}
+.reviews-author {
+
+}
+
+/* FOOTER */
+
+.main-footer {
+  padding: 15px 0;
+  background-color: #202e3b;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.logo-img,
+.logo-text {
+  vertical-align: middle;
+}
+
+.footer-nav {
+  float: right;
+  width: 75%;
+  text-align: right;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.btn-order {
+	margin-left: 30px;
+    display: inline-block;
+    background-color: #ffe083;
+    color: black;
+}
+.btn-order a {
+  text-decoration: none;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio {
+  overflow: hidden;
+}
+.portfolio-title {
+  float: left;
+.
+}
+.portfolio ul {
+  display: inline-block;
+  list-style: none;
+}
+.portfolio li {
+  display: inline-block;
+}
+
+
+/* CATALOG */
+
+.inner-promo-title {
+	width: 45%;
+	float: left;
+}
+.inner-promo-order {
+	width: 45%;
+	float: right;
+}
+.btn-consult-order {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    color: blue;
 }
 .catalog {
-	background-color: #f3f3f3;
+	overflow: hidden;
 }
-.catalog-menu ul {
-	list-style: none;
+.catalog-menu {
+	float: left;
+	width: 45%;
+	margin-right: 5%;
 }
-.benefit {
-	background-color: #202e3b;
-	color: white;
+.catalog-items {
+	float: left;
+	width: 50%;
+}
+.catalog-offers {
+	float: left;
+	width: 50%;
 }
 
-.benefit-numbers ul{
-	list-style: none;
-}
-.ben-num, cite {
-	color: #ffce34;
-}
+/* CONTACTS */
 
-
-
-
-
-.footer {
-	background-color: #202e3b;
-}
-.main-footer {
-	background-color: #202e3b;
-}
-.footer-nav li{
-	display: inline-block;
-	text-decoration:none;
-	list-style: none;
-}
-.footer-nav a{
-	color: white;
-}
-}
-.footer-nav a >.order {
-	color: #ffce34;
-}
-.footer.logo-text {
-	color: #ffce34;
-	text-decoration: none;
-}
-.btn-download, .btn-read {
-	background-color: #202e3b;
-	color: white;
-}
-.btn-rent {
-	background-color: #ffce34;
-	color: white;
-}
 .map-form {
-	background-color: #f3f3f3;
+	overflow: hidden;
 }
-.cite-contacts-com {
-	color: #202e3b;
+.map {
+	float: left;
+	width: 500px;
+}
+.consult-order {
+	float: right;
+}
+.consult-order input[type="text"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.btn-take-consult {
+	display: block;
+	padding: 10px;
+	background-color: #202e3b;
+	color: #fff;
+	width: 100%;
+}
+.comment-item {
+	display: inline-block;
+	width: 20%;
+	margin-right: 5%;
+}
+.comment-item:last-child {
+	margin-right: 0;
 }
