@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 img{
@@ -48,15 +49,17 @@ img{
 }
 .btn {
    padding: 5px;
+   display: inline-block;
+   text-align: center;
+}
+.btn a {
+	text-decoration: none;
 }
 .btn-order {
 	margin-left: 30px;
-    display: inline-block;
+    
     background-color: #ffe083;
     color: black;
-}
-.btn-order a {
-  text-decoration: none;
 }
 
 /* PROMO */
@@ -79,8 +82,6 @@ img{
 	margin-bottom: 20px;
 }
 .btn-catalog {
-  text-align: center;
-  display: inline-block;
   width: 200px;
   border: 2px solid #ffce34;
   text-decoration: none;
@@ -92,25 +93,25 @@ img{
 
 .consult {
 	padding-bottom: 20px;
+	background: #202e3b;
 }
 .consult-title {
   margin: 20px 20px;
+  color: orange;
 }
 .consult input[type="text"] {
   display: inline-block;
+  width: 15%;
   margin-right: 2%;
   padding: 10px;
   border: 2px solid yellow;
-  width: 20%;
   
 }
 .btn-consult-order {
-  display: inline-block;
   width: 20%;
   margin-right: 0;
   background-color: #ffce34;
   color: #202e3b;
-  text-decoration: none;
 }
 
 
@@ -189,7 +190,7 @@ img{
   width: 65%;
 }
 .reviews-author {
-
+  display: block;
 }
 
 /* FOOTER */
@@ -228,31 +229,53 @@ img{
 }
 .btn-order {
 	margin-left: 30px;
-    display: inline-block;
     background-color: #ffe083;
     color: black;
-}
-.btn-order a {
-  text-decoration: none;
 }
 
 
 /* PORTFOLIO */
 
-.portfolio {
+.portfolio-promo {
   overflow: hidden;
+  border: 2px solid green;
+  margin-bottom: 10px;
 }
 .portfolio-title {
   float: left;
-.
+  padding: 10px;
+}
+.portfolio-nav {
+  float: right;
+  width: 75%;
+  text-align: right;
 }
 .portfolio ul {
-  display: inline-block;
   list-style: none;
 }
 .portfolio li {
-  display: inline-block;
+	float: right;
+   display: inline-block;
 }
+.portfolio a {
+	display: inline-block;
+	padding: 15px;
+}
+.portfolio-bgsection {
+	background-image: url(http://placehold.it/950x950);
+	margin-bottom: 10px;
+}
+.portfolio-item {
+	background-color: #fff;
+	width: 300px;
+	border: 2px solid red;
+	padding: 15px;
+	margin: 15px;
+}
+.btn-detail {
+	background-color: yellow;
+}
+
 
 
 /* CATALOG */
@@ -266,9 +289,7 @@ img{
 	float: right;
 }
 .btn-consult-order {
-    display: inline-block;
     width: 150px;
-    text-align: center;
     color: blue;
 }
 .catalog {
@@ -306,7 +327,6 @@ img{
 	margin-bottom: 5px;
 }
 .btn-take-consult {
-	display: block;
 	padding: 10px;
 	background-color: #202e3b;
 	color: #fff;
@@ -320,3 +340,4 @@ img{
 .comment-item:last-child {
 	margin-right: 0;
 }
+
