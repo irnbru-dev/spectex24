@@ -152,6 +152,7 @@ img{
 	width: 70%;
 }
 
+
 /* ABOUT */
 .about{
   padding: 15px 0;
@@ -266,6 +267,7 @@ img{
 	margin-bottom: 10px;
 }
 .portfolio-item {
+	display: inline-block;
 	background-color: #fff;
 	width: 300px;
 	border: 2px solid red;
@@ -297,16 +299,33 @@ img{
 }
 .catalog-menu {
 	float: left;
-	width: 45%;
+	width: 25%;
 	margin-right: 5%;
 }
 .catalog-items {
 	float: left;
-	width: 50%;
+	width: 70%;
+
+}
+.catalog-item {
+  display: inline-block;
 }
 .catalog-offers {
 	float: left;
 	width: 50%;
+}
+.special-offers {
+	overflow: hidden;
+	background-image: url(http//:placehold.it/950x950);
+	border: 1px solid #000;
+}
+.special-offers-item {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+}
+.special-offers-item:last-child {
+	margin-right: 0;
 }
 
 /* CONTACTS */
