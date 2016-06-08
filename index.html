@@ -15,7 +15,7 @@
 	<header class="page-header">
 	  <div class="container">
 	  	<div class="logo">
-	  	 <img src="http://placehold.it/50" alt="Лого" class="logo-img">
+	  	 <img src="img/truck_icon.png" alt="Лого" class="logo-img">
 	  	  <span class="logo-text">
 	  	    <b>Спецтех</b>24
 	  	  </span>
@@ -43,19 +43,18 @@
 	   </div>
      </div>
 
-
-        <div class="consult clearfix">
-        <div class="container">
-            <h2 class="consult-title">Закажите бесплатную консультацию 
-              по подбору подходящей техники</h2>
-      	    <form action="URL">
-      	       	 <input type="text" name="name" value="Как вас зовут?">
-                 <input type="text" name="phone" value="Номер для связи">
-                 <input type="text" name="date" value="Выберите дату">
-      	    </form>
-            <a href="#" class="btn btn-consult-order">Заказать консультацию</a>
-        </div>
-        </div>
+      <div class="consult clearfix">
+      <div class="container">
+          <h2 class="consult-title">Закажите бесплатную консультацию 
+            по подбору подходящей техники</h2>
+          <form action="URL">
+             	 <input type="text" name="name" placeholder="Как вас зовут?">
+               <input type="text" name="phone" placeholder="Номер для связи">
+               <input type="text" name="date" placeholder="Выберите дату">
+          </form>
+          <a href="#" class="btn btn-consult-order">Заказать консультацию</a>
+      </div>
+      </div>
 	  
 
 	    <div class="advert">
@@ -76,8 +75,7 @@
 	  	    <div class="advert-item advert-item-operator">
 	  	    	<p>С техникой приедут квалифицированные операторы и водители</p>
 	  	    </div>
-      </div>   
-
+      </div>
 	    </div>
 
         <div class="catalog">
@@ -98,34 +96,34 @@
       		<h2>Спецпредложение</h2>
       		<table class="catalog-rent">
       			<tr>
-      				<th>Позиция для аренды</th>
-      				<th>За смену</th>
-      				<th>За неделю</th>
-      				<th>За месяц</th>
+      				<th class="col1">Позиция для аренды</th>
+      				<th class="col2">За смену</th>
+      				<th class="col3">За неделю</th>
+      				<th class="col4">За месяц</th>
       			</tr>
                 <tr>
-                	<td>Мини-экскаватор CAT</td>
-                	<td>5 000</td>
-                	<td>25 000</td>
-                	<td>60 000</td>
+                	<td class="col1">Мини-экскаватор CAT</td>
+                	<td class="col2">5 000</td>
+                	<td class="col3">25 000</td>
+                	<td class="col4">60 000</td>
+                </tr>
+                <tr class="even">
+                	<td class="col1">Экскаватор VOLVO</td>
+                	<td class="col2">3 000</td>
+                	<td class="col3">15 000</td>
+                	<td class="col4">40 000</td>
                 </tr>
                 <tr>
-                	<td>Экскаватор VOLVO</td>
-                	<td>3 000</td>
-                	<td>15 000</td>
-                	<td>40 000</td>
+                	<td class="col1">Грузовик VOLVO</td>
+                	<td class="col2">5 000</td>
+                	<td class="col3">25 000</td>
+                	<td class="col4">60 000</td>
                 </tr>
-                <tr>
-                	<td>Грузовик VOLVO</td>
-                	<td>5 000</td>
-                	<td>25 000</td>
-                	<td>60 000</td>
-                </tr>
-              <tr>
-                	<td>Мини-экскаватор CAT</td>
-                	<td>3 000</td>
-                	<td>15 000</td>
-                	<td>40 000</td>
+              <tr class="even">
+                	<td class="col1">Мини-экскаватор CAT</td>
+                	<td class="col2">3 000</td>
+                	<td class="col3">15 000</td>
+                	<td class="col4">40 000</td>
                 </tr>
       		</table>
       	</div>
@@ -144,37 +142,43 @@
                </ul>
             </section>
 
-      	<section class="reviews">
+      	   <section class="reviews">
       	    <h2 class="subtitle">Нас рекомендуют клиенты</h2>
             
-      	    
             <article class="reviews-item">
       	    	<div class="reviews-img">
                 <img src="http://placehold.it/60x60" alt="photo">
               </div>
-      	    	<blockquote class="reviews-quote">Спецтех24 - это надежные партнеры нашей компании, 
-                  которые всегда выполняют работу быстро и еще у них отличное чувство
-              юмора! Благодарим и рекомендуем.</blockquote>
-                <cite class="reviews-author">Оля Вольт, Реал-Строй</cite>
+              <div class="reviews-blockquote">
+    	    	     <blockquote class="reviews-quote">Спецтех24 - это надежные партнеры нашей компании,которые всегда выполняют работу быстро и еще у них отличное чувство
+                 юмора! Благодарим и рекомендуем.
+                 </blockquote>
+                 <cite class="reviews-author">Оля Вольт, Реал-Строй</cite>
+              </div>
       	    </article>
 
-      	    <article class="reviews-item">
-      	    	<div class="reviews-img">
-                 <img src="http://placehold.it/60x60" alt="">
+            <article class="reviews-item">
+              <div class="reviews-img">
+                <img src="http://placehold.it/60x60" alt="photo">
               </div>
-      	    	<blockquote class="reviews-quote">Все виды работ, предусмотренные договором, компания
+              <div class="reviews-blockquote">
+                 <blockquote class="reviews-quote">Все виды работ, предусмотренные договором, компания
               выполнена на высоком прфессиональном уровне, качественно, в срок, 
-                  в соответствии с требованиями ООО "ТНН" рекомендует</blockquote>
-                <cite class="reviews-author">Григорий Безымянный, ТНН</cite>
-      	    </article>
-      		  </div>
+                  в соответствии с требованиями ООО "ТНН" рекомендует
+                 </blockquote>
+                 <cite class="reviews-author">Григорий Безымянный, ТНН</cite>
+              </div>
+            </article>
+
+          </section>
       	</div>
       </div>
 
-      <div class="main-map">
-        <div class="container">
-         <img src="" alt="map">
-      </div>
+      <div class="map-main"> 
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.1826191029006!2d30.          29184841550077!3d59.9622941671529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963          1492ac25899%3A0x8ff24940c5738c!2zRXBpYyBTa2lsbHMgLSDRiNC60L7Qu9CwINC40L3RgtC10YDQvdC10YIt0YLQtdGF0L3QvtC70L7Qs9C40Lk!5e0!3m2!1sru!2sru!4v1465309813625" 
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+          </iframe>
       </div>
 
 	</main>
@@ -182,7 +186,7 @@
 <footer class="main-footer">
 <div class="container">
 	<a href="#" class="logo">
-	  	 <img src="http://placehold.it/50" alt="Лого" class="logo-img">
+	  	 <img src="img/truck_icon-white.png" alt="Лого" class="logo-img">
 	  	  <span class="logo-text">
 	  	    <b>Спецтех</b>24
 	  	  </span>
