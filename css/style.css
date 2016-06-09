@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: PT Sans, sans-serif;
 }
 
 img{
@@ -24,6 +25,7 @@ img{
 .page-header{
   padding: 15px 0;
   background-color: #ffcd34;
+  font-family: PT Sans,sans-serif;
 }
 
 .logo{
@@ -87,12 +89,14 @@ img{
 	color: white;
 	padding: 20px;
 	margin-bottom: 35px;
-	font-size: 40px;
+	font-size: 44px;
+	font-family: PT Sans Bold, PT Sans, sans-serif;
 	text-transform: uppercase;
 }
 .promo-txt {
 	color: white;
 	font-size: 20px;
+	font-family: PT Sans Regular, PT Sans, sans-serif;
 	margin-bottom: 35px;
 }
 .btn-catalog {
@@ -100,6 +104,7 @@ img{
   border: 2px solid #ffce34;
   text-decoration: none;
   font-size: 18px;
+  font-family: PT Sans Regular, Pt Sans, sans-serif;
   color: white;
 }
 
@@ -269,6 +274,7 @@ img{
 	border: 2px solid red;
 }
 .portfolio-item-house1 {
+	background-size: 100%;
 	background-image: url(../img/house1.jpg);
 }
 .portfolio-item-house2 {
@@ -319,7 +325,6 @@ img{
 .inner-promo-order {
 	width: 45%;
 	float: right;
-	margin-top: 50px;
 }
 .catalog {
 	overflow: hidden;
@@ -335,6 +340,7 @@ h2 {
 	float: left;
 	width: 25%;
 	margin-right: 5%;
+	font-family: PT Sans, sans-serif;
 }
 .catalog-menu li{
 	list-style: none;
@@ -343,6 +349,10 @@ h2 {
 	font-size: 16px;
 	line-height: 38px;
 	color: #202e3b;
+}
+.btn-download {
+	background: #202e3b;
+	color: #fff;
 }
 .catalog-items {
 	float: left;
@@ -448,13 +458,12 @@ h2 {
 .map-form {
 	overflow: hidden;
 }
-.map {
-	float: left;
-	width: 50%;
-	margin-right: 5%;
-}
 .map-main {
 	width: 100%;
+}
+.map-contacts {
+	float: left;
+	width: 45%;
 }
 .consult-order {
 	float: left;
