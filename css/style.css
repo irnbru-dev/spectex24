@@ -19,13 +19,23 @@ img{
 	content: '';
 	display: table;
 	clear: both;
+} 
+.consult-title, 
+.catalog-menu-title,
+.catalog-offers-title,
+.subtitle,
+.special-offers h2,
+.comments-title,
+.comments-title {  
+	font-size: 26px;
+	margin-top: 45px;
+	margin-bottom: 30px;
 }
 
 /* PAGE-HEADER */
 .page-header{
   padding: 15px 0;
   background-color: #ffcd34;
-  font-family: PT Sans,sans-serif;
 }
 
 .logo{
@@ -40,7 +50,10 @@ img{
   font-size: 24px;
   margin-right: 5px;
 }
-
+.page-header a {
+	text-decoration: none;
+	color: #000;
+}
 .header-nav{
   float: right;
   width: 75%;
@@ -61,13 +74,13 @@ img{
    display: inline-block;
    text-align: center;
    text-decoration: none;
+   box-sizing: border-box;
 }
 .btn a {
 	text-decoration: none;
 }
 .btn-order {
 	margin-left: 30px;
-    font-size: 16px;
     background-color: #ffe083;
 }
 .btn-order a {
@@ -107,6 +120,58 @@ img{
   font-family: PT Sans Regular, Pt Sans, sans-serif;
   color: white;
 }
+.portfolio-promo,
+.catalog-promo,
+.contacts-promo {
+	background-image: url(../img/portfolio-promobg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 35px 0;
+	overflow: hidden;
+}
+.catalog-promo h2,
+.contacts-promo h2,
+.portfolio-promo h2 {
+	color: #ffcd34;
+	font-size: 24px;
+}
+.catalog-promo p,
+.contacts-promo p {
+	color: #fff;
+}
+.portfolio-title,
+.catalog-promo-title,
+.contacts-promo-title {
+	float: left;
+}
+.catalog-promo-title {
+	width: 60%;
+}
+.portfolio-nav,
+.catalog-promo-order,
+.contacts-promo-order {
+	float: right;
+}
+.portfolio-title {
+  width: 25%;
+}
+.portfolio-nav {
+  width: 75%;
+  text-align: right;
+}
+.portfolio-nav ul {
+  list-style: none;
+}
+.portfolio-nav li {
+	float: right;
+	display: inline-block;
+}
+.portfolio-nav a {
+	display: inline-block;
+	padding-right: 15px;
+	color: #fff;
+}
+
 
 /* CONSULT */
 
@@ -164,6 +229,7 @@ img{
   font-size: 13px;
   line-height: 16px;
   font-family: PT Sans Regular, PT Sans, sans-serif;
+  
 
   background-image: url(http://placehold.it/50x50);
   background-position: 5px 10px;
@@ -172,9 +238,6 @@ img{
 
 .advert-item:last-child{
   padding-right: 0;
-}
-.advert-item .advert-item-tools {
-	background-image: url(../img/Rectangle 1 copy.png);
 }
 
 
@@ -241,40 +304,13 @@ img{
 
 /* PORTFOLIO */
 
-.portfolio-promo {
-  overflow: hidden;
-  border: 2px solid green;
-  margin-bottom: 10px;
-}
-.portfolio-title {
-  float: left;
-  padding: 10px;
-  color: #fff;
-}
-.portfolio-nav {
-  float: right;
-  width: 75%;
-  text-align: right;
-}
-.portfolio ul {
-  list-style: none;
-}
-.portfolio li {
-	float: right;
-	display: inline-block;
-}
-.portfolio a {
-	display: inline-block;
-	padding: 15px;
-}
+
 .portfolio-bgsection {
 	background-repeat: no-repeat;
-	background-size: 100%;
-	margin-bottom: 10px;
-	border: 2px solid red;
+	background-size: 100% 100%;
+	border-top:10px solid #000;
 }
 .portfolio-item-house1 {
-	background-size: 100%;
 	background-image: url(../img/house1.jpg);
 }
 .portfolio-item-house2 {
@@ -290,51 +326,32 @@ img{
 	padding: 25px;
 	margin: 100px 0 150px 160px;
 }
+.portfolio-item h3 {
+	color: #202e3b;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.portfolio-item p{
+	color: #202e3b;
+	font-size: 14px;
+	line-height: 20px;
+	padding-bottom: 20px;
+}
 .btn-detail {
 	background-color: #ffcd34;
+	color: #1d333f;
+	font-size: 15px;
+	font-family: PT Sans Bold, PT Sans, sans-serif;
 }
 
 
 /* CATALOG */
 
-.inner-promo {
-	padding-bottom: 50px;
-}
-.portfolio,
-.inner-promo {
-	background-image: url(../img/portfolio-promobg.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-.inner-promo-title {
-	width: 45%;
-	float: left;
-	color: #fff;
-}
-.inner-promo-title h2 {
-	color: #ffcd34;
-	font-size: 26px;
-	font-weight: normal;
-	font-family: PT Sans Regular, PT Sans, sans-serif;
-}
-.inner-promo-title p,
-.inner-promo-order p {
-	color: #fff;
-	font-size: 16px;
-}
-.inner-promo-order {
-	width: 45%;
-	float: right;
-}
+
 .catalog {
 	overflow: hidden;
 	background-color: #f3f3f3;
 	padding-bottom: 50px;
-}
-h2 {
-	font-size: 26px;
-	margin-top: 45px;
-	margin-bottom: 30px;
 }
 .catalog-menu {
 	float: left;
@@ -351,7 +368,7 @@ h2 {
 	color: #202e3b;
 }
 .btn-download {
-	background: #202e3b;
+	background-color: #202e3b;
 	color: #fff;
 }
 .catalog-items {
@@ -370,6 +387,24 @@ h2 {
 }
 .catalog-item:nth-child(2n-1) {
 	margin-right: 20px;
+}
+.catalog-nav {
+	text-align: center;
+	margin-top: 40px;
+}
+.catalog-nav li{
+  display: inline-block;
+  padding-left: 10px;
+}
+.catalog-nav a{
+  text-decoration: none;
+  color: #354b60;
+  font-size: 20px;
+}
+.catalog-nav li:nth-child(1){
+  background-color: #354b60;
+  padding: 5px;
+  border-radius: 5px;
 }
 .catalog-item h3,
 .special-offers-item h3 {
@@ -415,8 +450,17 @@ h2 {
 }
 .special-offers {
 	overflow: hidden;
-	background-image: url(http//:placehold.it/950x950);
-	border: 1px solid #000;
+	padding-bottom: 50px;
+
+	background-image: url(../img/special-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.special-offers h2 {
+	color: #fff;
+	font-size: 26px;
+	line-height: 28px;
+	font-family: PT Sans Bold, PT Sans, sans-serif;
 }
 .special-offers-item {
 	float: left;
@@ -428,6 +472,7 @@ h2 {
 }
 .catalog-rent {
 	border-collapse: collapse;
+	width: 100%;
 }
 .catalog-rent th {
 	background-color: #dfdfdf;
@@ -442,15 +487,6 @@ h2 {
 .even {
 	background-color: #fff;
 }
-.col1 {
-	padding-right: 115px;
-}
-.col2, .col3 {
-	padding-right: 50px;
-}
-.col4 {
-	padding-right: 90px;
-}
 
 
 /* CONTACTS */
@@ -461,18 +497,39 @@ h2 {
 .map-main {
 	width: 100%;
 }
+.map-form {
+	overflow: hidden;
+	background-color: #f3f3f3;
+	padding: 40px 0 50px 0;
+}
 .map-contacts {
 	float: left;
-	width: 45%;
+	width: 69%;
+	margin-right: 1%;
 }
 .consult-order {
 	float: left;
-	width: 45%;
+	width: 30%;
 }
-.consult-order input[type="text"] {
+.consult-order p{
+	color: #000;
+	font-size: 18px;
+	font-family: Pt Sans Bold, PT Sans, sans-serif;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.consult-order-title {
+	font-size: 16px;
+	font-family: PT Sans Regular, PT Sans, sans-serif;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.consult-order input[type="text"],
+.consult-order input[type="textarea"] {
 	display: block;
 	width: 100%;
-	margin-bottom: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 .btn-take-consult {
 	padding: 10px;
@@ -480,10 +537,29 @@ h2 {
 	color: #fff;
 	width: 100%;
 }
+.comments {
+	text-align: center;
+	padding-bottom: 70px;
+}
+.comments-title {
+	text-align: left;
+	color: #202e3b;
+	font-size: 26px;
+	font-family: PT Sans Bold, Pt Sans, sans-serif;
+}
 .comment-item {
 	display: inline-block;
-	width: 20%;
-	margin-right: 5%;
+	width: 23%;
+	margin-right: 2%;
+	color: #202e3b;
+	font-style: italic;
+}
+.comment-item blockquote {
+	margin: 10px 0;
+}
+.cite-contacts-com {
+	font-style: normal;
+	font-weight: bold;
 }
 .comment-item:last-child {
 	margin-right: 0;
@@ -520,7 +596,7 @@ h2 {
 
 .footer-nav a {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   color: white;
   text-decoration: none;
   font-size: 16px;
