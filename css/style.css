@@ -32,6 +32,8 @@ img{
 	margin-bottom: 30px;
 }
 
+
+
 /* PAGE-HEADER */
 .page-header{
   padding: 15px 0;
@@ -146,11 +148,16 @@ img{
 }
 .catalog-promo-title {
 	width: 60%;
+	margin-right: 10%;
 }
 .portfolio-nav,
-.catalog-promo-order,
 .contacts-promo-order {
 	float: right;
+}
+.catalog-promo-order {
+	border: 2px solid red;
+	float: left;
+	width: 30%;
 }
 .portfolio-title {
   width: 25%;
@@ -199,11 +206,11 @@ img{
 }
 .btn-consult-order {
   padding: 15px;
-  white-space: nowrap;
-  float: left;
-  width: 23%;
+  float: right;
   margin-right: 0;
   background-color: #ffce34;
+  color: #202e3b;
+  font-size: 18px;
 }
 .consult a {
 	text-decoration: none;
