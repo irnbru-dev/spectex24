@@ -71,15 +71,18 @@ img{
   padding: 10px;
   font-size: 16px;
 }
+.header-nav a:hover {
+	border: 2px solid #bc9d36;
+}
+.header-nav a:active {
+	border: 2px solid #796e38;
+}
 .btn {
    padding: 10px;
    display: inline-block;
    text-align: center;
    text-decoration: none;
    box-sizing: border-box;
-}
-.btn a {
-	text-decoration: none;
 }
 .btn-order {
 	margin-left: 30px;
@@ -88,6 +91,12 @@ img{
 .btn-order a {
 	color: #000;
 	font-size: 16px;
+}
+.btn-order:hover {
+	background-color: #ffecb2;
+}
+.btn-order:active {
+	background-color: #f6bf16;
 }
 
 /* PROMO */
@@ -98,7 +107,7 @@ img{
 	padding-bottom: 120px;
 	background-image: url(../img/MainPromo-bg.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 .promo-slogan {
 	color: white;
@@ -112,7 +121,7 @@ img{
 	color: white;
 	font-size: 20px;
 	font-family: PT Sans Regular, PT Sans, sans-serif;
-	margin-bottom: 35px;
+	padding-bottom: 35px;
 }
 .btn-catalog {
   width: 200px;
@@ -121,7 +130,27 @@ img{
   font-size: 18px;
   font-family: PT Sans Regular, Pt Sans, sans-serif;
   color: white;
+  position: relative;
+  padding-right: 15px;
 }
+.btn-catalog:after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-bottom: 3px solid white;
+	border-right: 3px solid white;
+	transform: rotate(-45deg);
+	top: 15px;
+	right: 10px;
+}
+.btn-catalog:hover {
+	border: 2px solid #ffd966;
+}
+.btn-catalog:active {
+	border: 2px solid #ffe390;
+}
+
 .portfolio-promo,
 .catalog-promo,
 .contacts-promo {
@@ -136,10 +165,18 @@ img{
 .portfolio-promo h2 {
 	color: #ffcd34;
 	font-size: 24px;
+	margin-bottom: 10px;
 }
 .catalog-promo p,
 .contacts-promo p {
 	color: #fff;
+}
+.contacts-promo-title h2,
+.contacts-promo-title p {
+	display: inline-block;
+}
+.contacts-promo-title p {
+	padding: 0 10px;
 }
 .portfolio-title,
 .catalog-promo-title,
@@ -177,6 +214,15 @@ img{
 	display: inline-block;
 	padding-right: 15px;
 	color: #fff;
+	font-size: 16px;
+	font-family: PT Sans Regular, PT Sans, sans-serif;
+}
+.portfolio-nav a:hover {
+	font-weight: bold;
+}
+.portfolio-nav a:active {
+	font-weight: bold;
+	text-decoration: none;
 }
 
 
@@ -219,7 +265,12 @@ img{
 	font-weight: bold;
 	font-family: PT Sans Regular,PT Sans, sans-serif;
 }
-
+.btn-consult-order:hover {
+	background-color: #ffd966;
+}
+.btn-consult-order:active {
+	background-color: #f6bf16;
+}
 
 /* ADVERT */
 .advert{
@@ -349,8 +400,27 @@ img{
 	color: #1d333f;
 	font-size: 15px;
 	font-family: PT Sans Bold, PT Sans, sans-serif;
+	position: relative;
+	padding-right: 30px;
+	font-weight: bold;
 }
-
+.btn-detail:after {
+	position: absolute;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-bottom: 3px solid #202e3b;
+	border-right: 3px solid #202e3b;
+	transform: rotate(-45deg);
+	top: 13px;
+	right: 15px;
+}
+.btn-detail:hover {
+	background-color: #ffd966;
+}
+.btn-detail:active {
+	background-color: #f6bf16;
+}
 
 /* CATALOG */
 
@@ -365,6 +435,7 @@ img{
 	width: 25%;
 	margin-right: 5%;
 	font-family: PT Sans, sans-serif;
+	position: relative;
 }
 .catalog-menu li{
 	list-style: none;
@@ -373,6 +444,30 @@ img{
 	font-size: 16px;
 	line-height: 38px;
 	color: #202e3b;
+}
+.truck-title {
+	position: relative;
+	left: 40px;
+}
+.truck-title:before {
+	position: absolute;
+	display: inline-block;
+	content: "";
+	width: 30px;
+	height: 30px;
+	left: -40px;
+	top: 3px;
+	background-image: url(../img/truck_icon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform: scale(-1, 1)
+}
+.catalog-menu a:hover {
+	font-weight: bold;
+}
+.catalog-menu a:active {
+	font-weight: bold;
+	text-decoration: none;
 }
 .btn-download {
 	background-color: #202e3b;
@@ -391,9 +486,32 @@ img{
   margin-top: 20px;
   text-align: center;
   padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 .catalog-item:nth-child(2n-1) {
 	margin-right: 20px;
+}
+.tape {
+	display: block;
+	text-align: center;
+	padding: 5px;
+	position: absolute;
+	width: 90px;
+	height: 30px;
+	top: 0px;
+	right: -25px;
+	transform: rotate(45deg);
+	color: #fff;
+	font-family: PT Sans Bold, PT Sans, sans-serif;
+}
+.new {
+	background-color: #00c22e;
+	font-size: 18px;
+}
+.sale {
+	background-color: #d12222;
+	font-size: 20px;
 }
 .catalog-nav {
 	text-align: center;
@@ -413,6 +531,12 @@ img{
   padding: 5px;
   border-radius: 5px;
 }
+.catalog-nav a:hover {
+	border: 2px solid #9aa5af;
+}
+.catalog-nav a:active {
+	border: 2px solid #202e3b;
+}
 .catalog-item h3,
 .special-offers-item h3 {
 	font-size: 21px;
@@ -426,7 +550,7 @@ img{
 	font-size: 18px;
 	font-family: PT Sans Bold, PT Sans, sans-serif;
 }
-.catalog-item span {
+.price {
 	font-size: 27px;
 }
 .old-price {
@@ -447,8 +571,20 @@ img{
 .btn-rent {
 	background-color: #f3c331;
 }
+.btn-rent:hover {
+	background-color: #ffd966;
+}
+.btn-rent:active {
+	background-color: #ffc600;
+}
 .btn-read {
 	background-color: #354b60;
+}
+.btn-read:hover {
+	background-color: #46617a;
+}
+.btn-read:active {
+	background-color: #567999;
 }
 .catalog-offers {
 	float: left;
@@ -524,6 +660,25 @@ img{
 	font-family: Pt Sans Bold, PT Sans, sans-serif;
 	margin-bottom: 20px;
 	font-weight: bold;
+}
+.phone:before {
+	content: "";
+	border: 1px solid red;
+	display: inline-block;
+	background-image: url(../img/Forma 1.png);
+	width: 30px;
+    height: 30px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.email:before {
+	content: "";
+	border: 1px solid red;
+	display: inline-block;
+	background-image: url(../img/Forma 2.png);
+	width: 30px;
+    height: 30px;
+	background-repeat: no-repeat;
 }
 .consult-order-title {
 	font-size: 16px;
@@ -612,8 +767,9 @@ img{
 	font-size: 16px;
 	color: #ffcd34;
 }
-.btn-order {
-	margin-left: 30px;
-    background-color: #ffe083;
-    color: black;
+.footer-nav a:hover {
+	border: 2px solid #636d76;
+}
+.footer-nav a:active {
+	border: 2px solid #a6abb1;
 }
