@@ -32,6 +32,8 @@ img{
 	margin-bottom: 30px;
 }
 
+/*BTNS*/
+
 
 
 /* PAGE-HEADER */
@@ -165,7 +167,8 @@ img{
 .portfolio-promo h2 {
 	color: #ffcd34;
 	font-size: 24px;
-	margin-bottom: 10px;
+	font-weight: normal;
+	padding-bottom: 10px;
 }
 .catalog-promo p,
 .contacts-promo p {
@@ -265,6 +268,17 @@ img{
 	font-weight: bold;
 	font-family: PT Sans Regular,PT Sans, sans-serif;
 }
+.calendare {
+	position: relative;
+}
+.calendare:after {
+	position: absolute;
+	content: "";
+	top: 22px;
+	right: 270px;
+    border: 10px solid transparent;
+    border-top-color: #ffcd34;
+}
 .btn-consult-order:hover {
 	background-color: #ffd966;
 }
@@ -281,24 +295,31 @@ img{
 .advert-item{
   float: left;
   width: 25%;
-  padding-right: 25px;
-  padding-left: 75px;
+  padding-right: 10px;
+  padding-left: 50px;
   box-sizing: border-box;
   font-size: 13px;
   line-height: 16px;
   font-family: PT Sans Regular, PT Sans, sans-serif;
   
-
-  background-image: url(http://placehold.it/50x50);
-  background-position: 5px 10px;
+  background-position: 0px 5px;
   background-repeat: no-repeat;
 }
-
 .advert-item:last-child{
   padding-right: 0;
 }
-
-
+.advert-item-tools {
+	background-image: url(../img/Tools.png);
+}
+.advert-item-worker {
+	background-image: url(../img/Worker.png);
+}
+.advert-item-border {
+	background-image: url(../img/RoundedRec.png);
+}
+.advert-item-operator {
+	background-image: url(../img/Man.png);
+}
 /* ABOUT */
 .about{
   background: #202e3b;
@@ -445,6 +466,22 @@ img{
 	line-height: 38px;
 	color: #202e3b;
 }
+.catalog-menu-active {
+	position: relative;
+	left: 20px;
+	font-weight: bold;
+}
+.catalog-menu-active:before {
+	position: absolute;
+	content: "";
+	border-top: 3px solid #354b60;
+	border-right: 3px solid #354b60;
+	width: 6px;
+	height: 6px;
+	left: -20px;
+	top: 15px;
+	transform: rotate(45deg);
+}
 .truck-title {
 	position: relative;
 	left: 40px;
@@ -457,6 +494,7 @@ img{
 	height: 30px;
 	left: -40px;
 	top: 3px;
+
 	background-image: url(../img/truck_icon.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -661,23 +699,32 @@ img{
 	margin-bottom: 20px;
 	font-weight: bold;
 }
+.phone, .email {
+	position: relative;
+	left: 40px;
+}
 .phone:before {
+	position: absolute;
+	left: -40px;
 	content: "";
-	border: 1px solid red;
 	display: inline-block;
-	background-image: url(../img/Forma 1.png);
-	width: 30px;
-    height: 30px;
+	width: 20px;
+    height: 20px;
+
+    background-image: url(../img/Forma2.png);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 .email:before {
+	position: absolute;
+	left: -40px;
 	content: "";
-	border: 1px solid red;
 	display: inline-block;
-	background-image: url(../img/Forma 2.png);
-	width: 30px;
-    height: 30px;
+	width: 25px;
+    height: 20px;
+
+    background: url(../img/Forma1.png);
+    background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 .consult-order-title {
@@ -687,7 +734,7 @@ img{
 	margin-bottom: 15px;
 }
 .consult-order input[type="text"],
-.consult-order input[type="textarea"] {
+.consult-order textarea {
 	display: block;
 	width: 100%;
 	padding: 15px;
