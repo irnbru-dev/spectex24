@@ -72,9 +72,10 @@ img{
   display: inline-block;
   padding: 10px;
   font-size: 16px;
+  border: 2px solid transparent;
 }
 .header-nav a:hover {
-	border: 2px solid #bc9d36;
+	border-color: #bc9d36;
 }
 .header-nav a:active {
 	border: 2px solid #796e38;
@@ -110,6 +111,31 @@ img{
 	background-image: url(../img/MainPromo-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	position: relative;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.promo:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 0;
+  bottom: 100%;
+  
+  background: linear-gradient(135deg, #000 33%, orange 33%, orange 66%, black 66%);
+  background-size: 40px 100%;
+}
+.promo:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 0;
+  top: 100%;
+  
+  background: linear-gradient(135deg, #000 33%, orange 33%, orange 66%, black 66%);
+  background-size: 40px 100%;
 }
 .promo-slogan {
 	color: white;
@@ -133,7 +159,7 @@ img{
   font-family: PT Sans Regular, Pt Sans, sans-serif;
   color: white;
   position: relative;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 .btn-catalog:after {
 	position: absolute;
@@ -144,7 +170,7 @@ img{
 	border-right: 3px solid white;
 	transform: rotate(-45deg);
 	top: 15px;
-	right: 10px;
+	right: 15px;
 }
 .btn-catalog:hover {
 	border: 2px solid #ffd966;
@@ -809,13 +835,14 @@ img{
   color: white;
   text-decoration: none;
   font-size: 16px;
+  border: 2px solid transparent;
 }
 .footer-nav .order {
 	font-size: 16px;
 	color: #ffcd34;
 }
 .footer-nav a:hover {
-	border: 2px solid #636d76;
+	border-color: #636d76;
 }
 .footer-nav a:active {
 	border: 2px solid #a6abb1;
