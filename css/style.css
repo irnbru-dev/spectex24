@@ -46,6 +46,7 @@ img{
   float: left;
   width: 20%;
   margin-right: 5%;
+  margin-top: 5px;
 }
 
 .logo-img,
@@ -72,16 +73,17 @@ img{
   display: inline-block;
   padding: 10px;
   font-size: 16px;
+}
+.header-link {
   border: 2px solid transparent;
 }
-.header-nav a:hover {
+.header-link:hover {
 	border-color: #bc9d36;
 }
-.header-nav a:active {
+.header-link:active {
 	border: 2px solid #796e38;
 }
 .btn {
-   padding: 10px;
    display: inline-block;
    text-align: center;
    text-decoration: none;
@@ -152,6 +154,7 @@ img{
 	padding-bottom: 35px;
 }
 .btn-catalog {
+  padding: 10px;
   width: 200px;
   border: 2px solid #ffce34;
   text-decoration: none;
@@ -221,7 +224,6 @@ img{
 	float: right;
 }
 .catalog-promo-order {
-	border: 2px solid red;
 	float: left;
 	width: 30%;
 }
@@ -280,12 +282,26 @@ img{
   color: #fff;
 }
 .btn-consult-order {
+  box-sizing: border-box;
   padding: 15px;
-  float: right;
+  float: left;
   margin-right: 0;
   background-color: #ffce34;
   color: #202e3b;
   font-size: 18px;
+  font-weight: bold;
+}
+.btn-promo-consult-order {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  padding: 15px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  background-color: #ffce34;
+  color: #202e3b;
+  font-size: 18px;
+  font-weight: bold;
 }
 .consult a {
 	text-decoration: none;
@@ -443,6 +459,7 @@ img{
 	padding-bottom: 20px;
 }
 .btn-detail {
+	padding: 10px;
 	background-color: #ffcd34;
 	color: #1d333f;
 	font-size: 15px;
@@ -487,7 +504,7 @@ img{
 .catalog-menu li{
 	list-style: none;
 }
-.catalog-menu a {
+.catalog-menu ul a {
 	font-size: 16px;
 	line-height: 38px;
 	color: #202e3b;
@@ -526,16 +543,32 @@ img{
 	background-repeat: no-repeat;
 	transform: scale(-1, 1)
 }
-.catalog-menu a:hover {
+.catalog-menu ul a:hover {
 	font-weight: bold;
 }
-.catalog-menu a:active {
+.catalog-menu ul a:active {
 	font-weight: bold;
 	text-decoration: none;
 }
 .btn-download {
-	background-color: #202e3b;
+	position: relative;
+	padding: 15px 20px;
+	padding-left: 40px;
+	margin-top: 20px;
+	background-color: #354b60;
 	color: #fff;
+	font-weight: normal;
+	font-size: 16px;
+}
+.btn-download:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background-image: url(../img/pdf.png);
+	background-size: 100%;
+	width: 17px;
+	height: 18px;
+	left: 15px;
 }
 .catalog-items {
 	float: left;
@@ -553,7 +586,7 @@ img{
   position: relative;
   overflow: hidden;
 }
-.catalog-item:nth-child(2n-1) {
+.catalog-item:nth-child(2n+1) {
 	margin-right: 20px;
 }
 .tape {
@@ -580,26 +613,32 @@ img{
 .catalog-nav {
 	text-align: center;
 	margin-top: 40px;
+	padding: 5px;
 }
+
 .catalog-nav li{
   display: inline-block;
   padding-left: 10px;
 }
-.catalog-nav a{
+.catalog-nav-notactive {
   text-decoration: none;
   color: #354b60;
   font-size: 20px;
+  border: 2px solid transparent;
 }
-.catalog-nav li:nth-child(1){
+.catalog-nav-active {
   background-color: #354b60;
   padding: 5px;
   border-radius: 5px;
+  color:#fff;
+  text-decoration: none;
+  font-size: 20px;
 }
-.catalog-nav a:hover {
-	border: 2px solid #9aa5af;
+.catalog-nav-notactive:hover {
+	border-color: #9aa5af;
 }
-.catalog-nav a:active {
-	border: 2px solid #202e3b;
+.catalog-nav-notactive:active {
+	border-color: #202e3b;
 }
 .catalog-item h3,
 .special-offers-item h3 {
@@ -628,6 +667,7 @@ img{
 	font-size: 22px;
 }
 .btn-rent, .btn-read {
+	padding: 10px;
 	color: #fff;
 	font-size: 18px;
 	font-family: PT Sans Bold, PT Sans, sans-serif;
